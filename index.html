@@ -30,12 +30,47 @@
       <div class="menu-block">
         <div class="menu-list">
           <div class="menu-title">訂製你的專屬旅程</div>
-          <div class="menu-items menu-dropdown">縣市</div>
+          <div class="menu-items">
+            <div class="menu-item-text">縣市</div>
+            <div class="icon-arrow">
+              <img class="" src="./image/dropdown-arrow.svg" alt="arrow icon" />
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              onclick="myFunction()"
+              class="menu-item-text menu-items dropbtn"
+            >
+              Dropdown
+              <div class="">
+                <img
+                  class="icon-arrow"
+                  src="./image/dropdown-arrow.svg"
+                  alt="arrow icon"
+                />
+              </div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="">請點選縣市</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
           <div class="menu-items menu-dropdown">類別</div>
           <div class="menu-items menu-input-keyword">輸入關鍵字...</div>
-          <div class="menu-items menu-search-button">搜尋按鈕</div>
+          <div class="menu-items menu-search-button">
+            <img
+              class="icon-search"
+              src="./image/magnifying-glass-solid.svg"
+              alt="Search icon"
+            />
+            搜尋
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
