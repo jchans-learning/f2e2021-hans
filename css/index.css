@@ -46,10 +46,22 @@ body {
 /* .index-title-card {
 } */
 
-.index-title-words {
-  margin: 100px;
-  max-width: initial;
-  position: relative;
+.index-title-words-top {
+  width: auto;
+  max-height: 31.2vh;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  /* transform: translate(0px, -1200px); */
+}
+
+.index-title-words-bottom {
+  width: auto;
+  max-height: 20.8vh;
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
   z-index: 1;
   /* transform: translate(0px, -1200px); */
 }
@@ -58,9 +70,75 @@ body {
   /* margin: 100px; */
   position: fixed;
   z-index: 1;
-  transform: translate(calc(50vw - 432px), calc(50vh - 432px));
+  transform: translate(calc(44vw - 432px), calc(50vh - 432px));
+}
+
+.menu-list {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 26.2vh;
+  margin-right: 13.9vw;
 }
 
 .menu-title {
+  /* Display/Bold/H2 */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 125%;
+
+  /* identical to box height, or 40px */
+  letter-spacing: 0.2em;
+
+  /* Grayscale/White */
   color: #ffffff;
+
+  margin-bottom: 30px;
+
+  z-index: 1;
+}
+
+.menu-items {
+  width: 333px;
+  height: 49px;
+  left: 0px;
+  top: 0px;
+
+  /* Grayscale/White */
+
+  background: #ffffff;
+  border-radius: 40px;
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 12px 24px; */
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 10px 0px;
+
+  /* Text/Bold/L */
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 125%;
+
+  z-index: 1;
+}
+
+.menu-search-button {
+  color: #ffffff;
+  background: #00bbf0;
 }
